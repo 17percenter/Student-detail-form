@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Form</title>
+  </head>
+  <body>
+    <h2>Student detail form</h2>
+    <form action="#">
+      <fieldset>
+        <legend>Personal information</legend>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" /><br />
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" /><br />
+        <label for="gender">Gender:</label>
+        <input type="radio" id="gender" name="gender" value="male" />Male
+        <input type="radio" id="gender" name="gender" value="female" />Female
+        <br />
+        <label for="course">Course:</label>
+        <input type="radio" id="course" name="course" value="BE" />B.E.
+        <input type="radio" id="course" name="course" value="BTech" />B.Tech
+        <input type="radio" id="course" name="course" value="ME" />M.E.
+        <input type="radio" id="course" name="course" value="MTech" />M.Tech
+        <input type="radio" id="course" name="course" value="MBA" />MBA
+        <input type="radio" id="course" name="course" value="MBAInt" />MBA
+        (Integrated 5 Yrs)
+        <br />
+        <label for="department">Department:</label>
+        <select name="department" id="department">
+          <option value="ADS">ADS</option>
+          <option value="AML">AML</option>
+          <option value="CSE">CSE</option>
+        </select>
+      </fieldset>
+    </form>
+  </body>
+</html>
