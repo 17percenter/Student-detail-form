@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Student Form</title>
   </head>
   <body>
-    <h2>Student detail form</h2>
-    <form action="#">
-      <fieldset>
-        <legend>Personal information</legend>
+    <div class="container">
+      <h2>STUDENT DETAIL FORM</h2>
+      <form action="#">
         <label for="firstName">First Name:</label>
         <input type="text" id="firstName" /><br />
         <label for="lastName">Last Name:</label>
@@ -25,16 +25,22 @@
         <input type="radio" id="course" name="course" value="ME" />M.E.
         <input type="radio" id="course" name="course" value="MTech" />M.Tech
         <input type="radio" id="course" name="course" value="MBA" />MBA
-        <input type="radio" id="course" name="course" value="MBAInt" />MBA
-        (Integrated 5 Yrs)
         <br />
         <label for="department">Department:</label>
         <select name="department" id="department">
-          <option value="ADS">ADS</option>
-          <option value="AML">AML</option>
-          <option value="CSE">CSE</option>
+          <option value="">-- Select a Course --</option>
         </select>
-      </fieldset>
-    </form>
+        <br />
+        <label for="rollNo">Roll No.</label>
+        <input type="text" id="rollNo" /><br />
+        <label for="dob">Date of Birth:</label>
+        <input type="date" /><br />
+        <label for="email">Student's Mail ID:</label>
+        <input type="email" /><br />
+        <button>
+          <label for="submit">Submit</label>
+        </button>
+      </form>
+    </div>
   </body>
 </html>
