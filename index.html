@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
     <title>Student Form</title>
   </head>
   <body>
@@ -12,31 +13,59 @@
       <h2>STUDENT DETAIL FORM</h2>
       <form action="#">
         <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" /><br />
+        <input type="text" id="firstName" required /><br />
         <label for="lastName">Last Name:</label>
         <input type="text" id="lastName" /><br />
         <label for="gender">Gender:</label>
-        <input type="radio" id="gender" name="gender" value="male" />Male
+        <input
+          type="radio"
+          id="gender"
+          name="gender"
+          value="male"
+          required
+        />Male
         <input type="radio" id="gender" name="gender" value="female" />Female
         <br />
         <label for="course">Course:</label>
-        <input type="radio" id="course" name="course" value="BE" />B.E.
-        <input type="radio" id="course" name="course" value="BTech" />B.Tech
-        <input type="radio" id="course" name="course" value="ME" />M.E.
-        <input type="radio" id="course" name="course" value="MTech" />M.Tech
-        <input type="radio" id="course" name="course" value="MBA" />MBA
+        <input
+          type="radio"
+          class="course"
+          name="course"
+          value="BE"
+          onclick="clicked()"
+          required
+        />B.E.
+        <input
+          type="radio"
+          name="course"
+          value="BTech"
+          onclick="clicked()"
+        />B.Tech
+        <input type="radio" name="course" value="ME" onclick="clicked()" />M.E.
+        <input
+          type="radio"
+          name="course"
+          value="MTech"
+          onclick="clicked()"
+        />M.Tech
+        <input type="radio" name="course" value="MBA" onclick="clicked()" />MBA
         <br />
         <label for="department">Department:</label>
-        <select name="department" id="department">
+        <select name="department" id="department" required disabled>
           <option value="">-- Select a Course --</option>
+          <option value="" hidden>-- Select a Department --</option>
+          <option class="bes" value="" hidden>
+            Computer Science and Engineering
+          </option>
+          <option class="btechs" value="" hidden>Information Technology</option>
         </select>
         <br />
         <label for="rollNo">Roll No.</label>
-        <input type="text" id="rollNo" /><br />
+        <input type="text" id="rollNo" required /><br />
         <label for="dob">Date of Birth:</label>
-        <input type="date" /><br />
+        <input type="date" required /><br />
         <label for="email">Student's Mail ID:</label>
-        <input type="email" /><br />
+        <input type="email" required /><br />
         <button>
           <label for="submit">Submit</label>
         </button>
